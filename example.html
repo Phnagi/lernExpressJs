@@ -10,5 +10,19 @@
     <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum error, ab id perferendis totam facere tempore reprehenderit fugiat dicta illo.
     </p>
+
+    <form action="/formhandling" method="GET">
+        <label for="name">名稱</label>
+        <input type="text" id="name" name="name">
+        <label for="age">年齡</label>
+        <input type="number" name="age" id="age">
+        <button>交出表單</button>
+    </form>
+
+    <form action="/formhandling2" method="POST">
+        <input type="email" name="email">
+        <input type="password" name="password">
+        <button>交出表單2</button>
+    </form>
 </body>
 </html>
