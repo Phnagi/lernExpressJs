@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/style2.css">
+</head>
+<body>
+    <h1>hello</h1>
+    <form action="/example" method="GET">
+        <label for="name">名稱</label>
+        <input type="text" id="name" name="name">
+        <label for="age">年齡</label>
+        <input type="number" id="age" name="age">
+        <button>交出表單</button>
+
+    </form>
+    <table>
+        <tr>
+            <th>姓名</th>
+            <th>年齡</th>
+            <th>體重</th>
+            <th>興趣</th>
+        </tr>
+        <% everbody.forEach((everbodyE) => { %>
+            <tr>
+                <td><%= everbodyE.name %></td>
+                <td><%= everbodyE.age %></td>
+                <td><%= everbodyE.weight %></td>
+                <td><%= everbodyE.hobby %></td>
+            </tr>
+        <% }) %>
+    </table>
+
+
+</body>
+</html>

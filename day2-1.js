@@ -18,6 +18,9 @@ app.get("/example2",(req,res) => {
     res.json(obj);
 });
 
+
+
+
 app.get("/example3",(req,res) => {
     res.redirect("/actualExample");//重新導向到/actualExample
 });
@@ -29,6 +32,9 @@ app.get("*",(req,res) => {
 app.get("/actualExample",(req,res) => {
     res.send("真正的資源");
 });
+
+
+//day3
 
 
 
